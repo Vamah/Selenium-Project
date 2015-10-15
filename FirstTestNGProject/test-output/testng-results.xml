@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SampleTest" duration-ms="7155" started-at="2015-09-28T00:08:17Z" finished-at="2015-09-28T00:08:25Z">
+    <groups>
+    </groups>
+    <test name="testNGxml" duration-ms="7155" started-at="2015-09-28T00:08:17Z" finished-at="2015-09-28T00:08:25Z">
+      <class name="firsttestngpackage.FirstTestNGFile">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:firsttestngpackage.FirstTestNGFile@6bee68fc]" name="getUrl" is-config="true" duration-ms="2263" started-at="2015-09-27T19:08:17Z" finished-at="2015-09-27T19:08:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:firsttestngpackage.FirstTestNGFile@6bee68fc]" name="verifyHomePageTitle" duration-ms="2930" started-at="2015-09-27T19:08:20Z" finished-at="2015-09-27T19:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:firsttestngpackage.FirstTestNGFile@6bee68fc]" name="exit" is-config="true" duration-ms="1725" started-at="2015-09-27T19:08:23Z" finished-at="2015-09-27T19:08:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- firsttestngpackage.FirstTestNGFile -->
+      <class name="firsttestngpackage.IndeedJobSearch">
+        <test-method status="SKIP" signature="UsingDriver(java.lang.String)[pri:0, instance:firsttestngpackage.IndeedJobSearch@6ede600b]" name="UsingDriver" duration-ms="0" started-at="2015-09-27T19:08:23Z" finished-at="2015-09-27T19:08:23Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method UsingDriver but has not been marked @Optional or defined
+in C:\Users\Anuraadha\workspace\Selenium\FirstTestNGProject\src\firsttestngpackage\testNG.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method UsingDriver but has not been marked @Optional or defined
+in C:\Users\Anuraadha\workspace\Selenium\FirstTestNGProject\src\firsttestngpackage\testNG.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:148)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1287)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1004)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1093)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsingDriver -->
+      </class> <!-- firsttestngpackage.IndeedJobSearch -->
+      <class name="firsttestngpackage.HelloWorld">
+        <test-method status="PASS" signature="Hello()[pri:0, instance:firsttestngpackage.HelloWorld@1a1933cc]" name="Hello" duration-ms="128" started-at="2015-09-27T19:08:20Z" finished-at="2015-09-27T19:08:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hello -->
+      </class> <!-- firsttestngpackage.HelloWorld -->
+    </test> <!-- testNGxml -->
+  </suite> <!-- SampleTest -->
+</testng-results>
