@@ -18,27 +18,17 @@ public class pName {
 	    	public void presidentByName()
 	    	{
 	        wd.get("https://potus-ui.herokuapp.com/");
-//	        wd.findElement(By.linkText("Presidents by year")).click();
-//	        if (!wd.findElement(By.xpath("//select[@id='year']//option[2]")).isSelected()) {
-//	            wd.findElement(By.xpath("//select[@id='year']//option[2]")).click();
-//	        }
-	        if (!wd.findElement(By.tagName("html")).getText().contains("George Washington")) {
-	            System.out.println("verifyTextPresent failed");
-	        }
-	        wd.findElement(By.xpath("//div[@id='content']//li[.='John Quincy Adams']")).click();
 	        wd.findElement(By.linkText("Find Presidents by name")).click();
 	        wd.findElement(By.id("q")).click();
 	        wd.findElement(By.id("q")).clear();
 	        wd.findElement(By.id("q")).sendKeys("Lincoln");
 	        wd.findElement(By.id("search-btn")).click();
-	        wd.findElement(By.linkText("Abraham Lincoln")).click();
-	        wd.findElement(By.linkText("Find Presidents by name")).click();
-	        wd.findElement(By.id("q")).click();
-	        wd.findElement(By.id("q")).clear();
-	        wd.findElement(By.id("q")).sendKeys("lincoln");
-	        wd.findElement(By.id("search-btn")).click();
-	        wd.findElement(By.linkText("Abraham Lincoln")).click();
-	        wd.quit();
+	        if (!wd.findElement(By.tagName("html")).getText().contains("Abraham LincolnParty: RepublicanYears in office:1861186218631864")) 
+	        {
+	                    System.out.println("verifyTextPresent failed");
+	        }
+
+	        wd.close();
 }
 }
 	    
