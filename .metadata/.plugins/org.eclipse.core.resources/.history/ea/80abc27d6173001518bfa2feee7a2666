@@ -1,0 +1,71 @@
+package firsttestngpackage;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class PresidentSel {
+	WebDriver driver=new FirefoxDriver();;
+
+	public String baseUrl = "http://xxx.com/";
+	
+
+	
+	@Test(priority=0)
+     public void verifyHomePageTitle() {
+		driver.get(baseUrl);
+		
+	  System.out.println(driver.getTitle());
+	  String expectedResult = "Presidents of USA";
+	  String actualResult = driver.getTitle();
+      Assert.assertEquals(actualResult,expectedResult);
+  	  
+  }
+	@Test()
+	public void selectFromDropown(){
+		//Select select = new Select(driver.findElement(By.xpath("//path_to_drop_down")));
+		 
+		 
+		 String[] exp = {"1789"}; 
+			WebElement dropdown = driver.findElement(By.id("//select[@id='year']"));  
+	        Select select = new Select(dropdown);  
+	        List<WebElement> options = select.getOptions();  
+	        for(WebElement we:options)  
+	        {  
+	         for (int i=0; i<1; i++){
+	             if (we.getText().equals(exp[i])){
+	             System.out.println("1789 is present in dropdown");
+	             } 
+	           }
+			
+	        Select.select("//select[@id='year']", "label=1789");
+			WebElement element = driver.findElement(By.xPath("//select[@id='year']", "label=1789"));
+			String str = element.getText();
+	//add wait as required... below step may fail
+			Assert.assertEquals(str, "George Washington");
+		}
+	        driver.quit();
+	}
+		 
+		 
+		 
+		//select.selectByVisibleText("Value1");
+		
+		
+		
+		
+  
+	}
+
+
