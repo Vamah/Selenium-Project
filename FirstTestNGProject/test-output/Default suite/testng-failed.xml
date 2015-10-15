@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="firsttestngpackage.FirstTestNGFile">
+      <class name="firsttestngpackage.PresidentSel">
         <methods>
+          <include name="selectFromDropown"/>
           <include name="verifyHomePageTitle"/>
-          <include name="getUrl"/>
-          <include name="exit"/>
         </methods>
-      </class> <!-- firsttestngpackage.FirstTestNGFile -->
+      </class> <!-- firsttestngpackage.PresidentSel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

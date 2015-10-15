@@ -16,9 +16,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class PresidentSel {
-	WebDriver driver=new FirefoxDriver();;
+	WebDriver driver=new FirefoxDriver();
 
-	public String baseUrl = "http://xxx.com/";
+	public String baseUrl = "https://potus-ui.herokuapp.com/";
 	
 
 	
@@ -36,7 +36,7 @@ public class PresidentSel {
 	public void selectFromDropown(){
 		//Select select = new Select(driver.findElement(By.xpath("//path_to_drop_down")));
 		 
-		 
+		 driver.findElement(By.xpath("//nav[@id='navigation']/div[2]/a,'Presidents by year')]")).click();
 		 String[] exp = {"1789"}; 
 			WebElement dropdown = driver.findElement(By.id("//select[@id='year']"));  
 	        Select select = new Select(dropdown);  

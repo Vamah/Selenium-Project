@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name="SampleTest" verbose="1" >
-  <test name="testNG1xml" >
+  <test name="NewTestNGxml" >
     <classes>
        
-       <class name="firsttestngpackage.PresidentSel" />
-       <class name="firsttestngpackage.PresidentName" />
-          
+       <class name="firsttestngpackage.pYear" />
+       <class name="firsttestngpackage.pName" />
+      
     </classes>
   </test>
  

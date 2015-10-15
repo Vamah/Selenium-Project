@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class PresidentName {
 	WebDriver driver=new FirefoxDriver();;
-	public String baseUrl = "http://xxx.com/";	
+	public String baseUrl = "https://potus-ui.herokuapp.com/";	
     
 	@Test(priority=1)
 	public void presidentByName() throws Exception{
